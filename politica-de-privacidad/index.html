@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad — FactuPro</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <!-- Start cookieyes banner -->
+  <script id="cookieyes" type="text/javascript" src="https://cdn-cookieyes.com/client_data/7185c98f9cda46b42181f2e853773d56/script.js"></script>
+  <!-- End cookieyes banner -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #1f1f2e;
+      background: #fefdfb;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      padding: 16px 0;
+      background: rgba(254, 253, 248, 0.92);
+      backdrop-filter: saturate(180%) blur(10px);
+      -webkit-backdrop-filter: saturate(180%) blur(10px);
+      border-bottom: 1px solid #eceef1;
+    }
+    .header-inner {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      font-weight: 500;
+      color: #6b7280;
+      padding: 6px 10px 6px 4px;
+      margin-left: -4px;
+      border-radius: 8px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .back-link:hover { color: #14142b; background: #f5f6f8; }
+    .logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 24px;
+      font-weight: 900;
+      color: #14142b;
+      letter-spacing: -0.9px;
+      line-height: 1;
+    }
+
+    .legal-hero {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 48px 20px 32px;
+    }
+    .legal-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 18px;
+    }
+    .legal-label::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #FFDD00;
+      border-radius: 2px;
+    }
+    .legal-title {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(32px, 7vw, 48px);
+      font-weight: 900;
+      color: #14142b;
+      letter-spacing: -1.4px;
+      line-height: 1.05;
+      margin: 0 0 14px;
+    }
+    .legal-updated {
+      font-size: 13px;
+      color: #9ca3af;
+      margin: 0;
+    }
+
+    .legal-wrap {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 16px 20px 64px;
+    }
+    .section {
+      padding-top: 32px;
+      margin-top: 32px;
+      border-top: 1px solid #eceef1;
+    }
+    .section:first-child {
+      border-top: none;
+      margin-top: 0;
+      padding-top: 0;
+    }
+    .section-num {
+      display: inline-block;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 13px;
+      font-weight: 700;
+      color: #9ca3af;
+      margin-bottom: 8px;
+      font-variant-numeric: tabular-nums;
+    }
+    .section h2 {
+      font-size: 20px;
+      font-weight: 600;
+      color: #14142b;
+      margin: 0 0 14px;
+      letter-spacing: -0.3px;
+      line-height: 1.3;
+    }
+    .section p {
+      font-size: 16px;
+      color: #4b5563;
+      margin: 0 0 14px;
+      line-height: 1.65;
+    }
+    .section p:last-child { margin-bottom: 0; }
+    .section ul {
+      margin: 0 0 14px;
+      padding: 0;
+      list-style: none;
+    }
+    .section ul li {
+      position: relative;
+      padding-left: 20px;
+      font-size: 16px;
+      color: #4b5563;
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+    .section ul li::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 11px;
+      width: 5px;
+      height: 5px;
+      background: #14142b;
+      border-radius: 50%;
+    }
+    .section strong { color: #14142b; font-weight: 600; }
+    .section a { color: #14142b; text-decoration: underline; text-underline-offset: 3px; }
+
+    .info-box {
+      background: #fafaf7;
+      border: 1px solid #eceef1;
+      border-radius: 14px;
+      padding: 20px 22px;
+      margin: 8px 0 0;
+    }
+    .info-box p {
+      font-size: 14px;
+      margin: 0 0 6px;
+    }
+    .info-box p:last-child { margin-bottom: 0; }
+
+    /* Rights grid */
+    .rights-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 10px;
+      margin: 16px 0;
+    }
+    .right-item {
+      padding: 14px 16px;
+      background: #fafaf7;
+      border: 1px solid #eceef1;
+      border-radius: 12px;
+    }
+    .right-item strong {
+      display: block;
+      font-size: 14px;
+      color: #14142b;
+      margin-bottom: 2px;
+    }
+    .right-item span {
+      font-size: 14px;
+      color: #6b7280;
+      line-height: 1.5;
+    }
+
+    .contact-card {
+      margin-top: 64px;
+      padding: 32px 24px;
+      background: linear-gradient(180deg, #fefdf8 0%, #f5f6f8 100%);
+      border: 1px solid #eceef1;
+      border-radius: 18px;
+      text-align: center;
+    }
+    .contact-card h3 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: #14142b;
+      margin: 0 0 8px;
+      letter-spacing: -0.4px;
+    }
+    .contact-card p {
+      font-size: 14px;
+      color: #6b7280;
+      margin: 0 0 18px;
+      line-height: 1.55;
+    }
+    .contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 18px;
+      background: #14142b;
+      color: #fefdf8;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 999px;
+      transition: transform 0.15s, background 0.15s;
+    }
+    .contact-btn:hover { background: #000; transform: translateY(-1px); }
+
+    .legal-footer {
+      border-top: 1px solid #eceef1;
+      padding: 28px 0 40px;
+      background: #fefdf8;
+    }
+    .legal-footer-inner {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .legal-footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 20px;
+    }
+    .legal-footer-links a {
+      font-size: 13px;
+      color: #6b7280;
+      font-weight: 500;
+      transition: color 0.15s;
+    }
+    .legal-footer-links a:hover { color: #14142b; }
+    .legal-footer p {
+      font-size: 12px;
+      color: #9ca3af;
+      margin: 0;
+    }
+
+    @media (min-width: 720px) {
+      .header-inner, .legal-hero, .legal-wrap, .legal-footer-inner {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      .legal-hero { padding-top: 72px; padding-bottom: 40px; }
+      .logo { font-size: 28px; }
+      .section h2 { font-size: 22px; }
+      .section p, .section ul li { font-size: 17px; }
+      .rights-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .legal-footer-inner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="https://factupro.es" class="back-link">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        Volver
+      </a>
+      <a href="https://factupro.es" class="logo">FactuPro</a>
+    </div>
+  </header>
+
+  <section class="legal-hero">
+    <span class="legal-label">Legal</span>
+    <h1 class="legal-title">Política de Privacidad</h1>
+    <p class="legal-updated">Última actualización: abril de 2026</p>
+  </section>
+
+  <main class="legal-wrap">
+
+    <div class="section">
+      <span class="section-num">01</span>
+      <h2>Responsable del tratamiento</h2>
+      <div class="info-box">
+        <p><strong>Denominación:</strong> Aeternum Solutions S.L.</p>
+        <p><strong>CIF:</strong> B56491699</p>
+        <p><strong>Domicilio:</strong> C. Antonio María Manrique 3, 35011 Las Palmas de Gran Canaria</p>
+        <p><strong>Contacto:</strong> info@factupro.es</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section-num">02</span>
+      <h2>Datos que recopilamos</h2>
+      <p>Recopilamos los datos que nos facilitas directamente al registrarte, contactarnos o utilizar nuestros servicios:</p>
+      <ul>
+        <li>Nombre y apellidos</li>
+        <li>Dirección de correo electrónico</li>
+        <li>Número de teléfono (cuando lo facilitas)</li>
+        <li>Datos de facturación y NIF/CIF (necesarios para la prestación del servicio)</li>
+        <li>Datos de navegación recogidos mediante cookies (ver Política de Cookies)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-num">03</span>
+      <h2>Finalidad y base legal</h2>
+      <p>Tratamos tus datos con las siguientes finalidades y bases legales:</p>
+      <ul>
+        <li><strong>Gestión del servicio:</strong> prestación del software de facturación contratado. Base legal: ejecución del contrato (art. 6.1.b RGPD).</li>
+        <li><strong>Comunicaciones comerciales:</strong> envío de información sobre novedades y promociones. Base legal: consentimiento expreso (art. 6.1.a RGPD), revocable en cualquier momento.</li>
+        <li><strong>Análisis y mejora:</strong> análisis estadístico mediante Google Analytics 4 y Microsoft Clarity. Base legal: interés legítimo (art. 6.1.f RGPD), condicionado al consentimiento de cookies.</li>
+        <li><strong>Obligaciones legales:</strong> conservación de datos fiscales y contables. Base legal: obligación legal (art. 6.1.c RGPD).</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-num">04</span>
+      <h2>Conservación de datos</h2>
+      <p>Conservamos tus datos durante el tiempo necesario para cumplir con la finalidad para la que fueron recogidos:</p>
+      <ul>
+        <li>Clientes activos: durante la vigencia de la relación contractual.</li>
+        <li>Facturación: 5 años según la legislación fiscal española.</li>
+        <li>Comunicaciones comerciales: hasta que retires el consentimiento.</li>
+        <li>Cookies: según los plazos indicados en la Política de Cookies.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-num">05</span>
+      <h2>Transferencias internacionales</h2>
+      <p>Algunos proveedores de análisis (Google Analytics 4, Microsoft Clarity) pueden transferir datos a servidores fuera del Espacio Económico Europeo, concretamente a Estados Unidos. Estas transferencias se realizan bajo las <strong>Cláusulas Contractuales Tipo (CCT)</strong> aprobadas por la Comisión Europea, conforme al art. 46 RGPD.</p>
+    </div>
+
+    <div class="section">
+      <span class="section-num">06</span>
+      <h2>Encargados del tratamiento</h2>
+      <p>No cedemos tus datos a terceros salvo obligación legal. Utilizamos los siguientes proveedores con los que hemos suscrito los correspondientes acuerdos de encargo:</p>
+      <ul>
+        <li>Google LLC (Google Analytics 4) — análisis de tráfico</li>
+        <li>Microsoft Corporation (Microsoft Clarity) — análisis de comportamiento</li>
+        <li>CookieYes (Rhino Legal Tech Ltd.) — gestión de consentimiento</li>
+        <li>Meta Platforms Ireland Ltd. (Meta Pixel) — publicidad (pendiente de activación)</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <span class="section-num">07</span>
+      <h2>Tus derechos</h2>
+      <p>Puedes ejercer los siguientes derechos sobre tus datos personales:</p>
+      <div class="rights-grid">
+        <div class="right-item">
+          <strong>Acceso</strong>
+          <span>Conocer qué datos tratamos sobre ti.</span>
+        </div>
+        <div class="right-item">
+          <strong>Rectificación</strong>
+          <span>Corregir datos inexactos o incompletos.</span>
+        </div>
+        <div class="right-item">
+          <strong>Supresión</strong>
+          <span>Eliminar tus datos cuando ya no sean necesarios.</span>
+        </div>
+        <div class="right-item">
+          <strong>Oposición</strong>
+          <span>Oponerte al tratamiento por interés legítimo.</span>
+        </div>
+        <div class="right-item">
+          <strong>Limitación</strong>
+          <span>Restringir el tratamiento en determinados casos.</span>
+        </div>
+        <div class="right-item">
+          <strong>Portabilidad</strong>
+          <span>Recibir tus datos en formato legible por máquina.</span>
+        </div>
+      </div>
+      <p>Escríbenos a <strong>info@factupro.es</strong> con copia de tu documento de identidad. También puedes reclamar ante la Agencia Española de Protección de Datos en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>.</p>
+    </div>
+
+    <div class="section">
+      <span class="section-num">08</span>
+      <h2>Seguridad</h2>
+      <p>Aplicamos medidas técnicas y organizativas adecuadas para garantizar la seguridad de tus datos y evitar su alteración, pérdida, tratamiento o acceso no autorizado, conforme al estado de la tecnología y la naturaleza de los datos.</p>
+    </div>
+
+    <div class="section">
+      <span class="section-num">09</span>
+      <h2>Cambios en esta política</h2>
+      <p>Podemos actualizar esta política en cualquier momento. Te notificaremos los cambios relevantes por correo electrónico o mediante un aviso destacado en el sitio web.</p>
+    </div>
+
+    <div class="contact-card">
+      <h3>¿Alguna duda sobre tus datos?</h3>
+      <p>Contáctanos y te responderemos cuanto antes.</p>
+      <a href="mailto:info@factupro.es" class="contact-btn">
+        info@factupro.es
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="legal-footer">
+    <div class="legal-footer-inner">
+      <p>© 2026 Aeternum Solutions S.L.</p>
+      <div class="legal-footer-links">
+        <a href="/aviso-legal">Aviso Legal</a>
+        <a href="/politica-de-cookies">Política de Cookies</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

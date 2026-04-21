@@ -5,6 +5,9 @@
   "rewrites": [
     { "source": "/software-de-facturacion", "destination": "/software-de-facturacion/index.html" },
     { "source": "/software-verifactu", "destination": "/software-verifactu/index.html" },
-    { "source": "/creacion-de-facturas-online", "destination": "/creacion-de-facturas-online/index.html" }
+    { "source": "/creacion-de-facturas-online", "destination": "/creacion-de-facturas-online/index.html" },
+    { "source": "/aviso-legal", "destination": "/aviso-legal/index.html" },
+    { "source": "/politica-de-privacidad", "destination": "/politica-de-privacidad/index.html" },
+    { "source": "/politica-de-cookies", "destination": "/politica-de-cookies/index.html" }
   ]
 }
