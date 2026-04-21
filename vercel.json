@@ -1,0 +1,10 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "https://factupro.es", "permanent": false }
+  ],
+  "rewrites": [
+    { "source": "/software-de-facturacion", "destination": "/software-de-facturacion/index.html" },
+    { "source": "/software-verifactu", "destination": "/software-verifactu/index.html" },
+    { "source": "/creacion-de-facturas-online", "destination": "/creacion-de-facturas-online/index.html" }
+  ]
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FactuPro — El software de facturación que funciona desde WhatsApp</title>
+  <meta name="description" content="Crea facturas, registra gastos y cumple con Verifactu sin aprender contabilidad. Desde tu móvil, sin instalar nada." />
+
+  <!-- Preload fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============== HEADER ============== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="/" class="logo">FactuPro</a>
+      <a href="#registro" class="btn btn-primary btn-header" data-cta="header_signup">
+        <span class="arrow">→</span> Regístrate gratis
+      </a>
+    </div>
+  </header>
+
+  <!-- ============== HERO ============== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1 class="hero-title">
+          <span class="emoji">👉</span> El software de facturación<br />
+          que funciona desde WhatsApp
+        </h1>
+        <p class="hero-sub">
+          <span class="emoji-sm">👉</span> Crea facturas, registra gastos y cumple con Verifactu sin aprender contabilidad
+        </p>
+
+        <ul class="hero-benefits">
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sin instalar nada</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Sin conocimientos técnicos</li>
+          <li><span class="check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span> Desde el móvil</li>
+        </ul>
+
+        <div class="hero-ctas">
+          <a href="#registro" class="btn btn-primary" data-cta="hero_signup">Empieza gratis</a>
+          <a href="#asesor" class="btn btn-secondary" data-cta="hero_advisor">Hablar con un asesor</a>
+        </div>
+
+        <p class="hero-note">Empieza en minutos desde tu móvil, sin configuraciones complicadas.</p>
+      </div>
+
+      <div class="hero-media">
+        <div class="hero-image-wrap">
+          <!-- Placeholder. Cámbialo por la imagen real del móvil con el dashboard -->
+          <img src="assets/hero-mockup.jpg" alt="Dashboard FactuPro en móvil" class="hero-image" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+          <div class="placeholder-text">📱 Imagen: móvil con dashboard</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FEATURES (banner amarillo) ============== -->
+  <section class="features">
+    <div class="container">
+      <h2 class="features-title">
+        Todo lo que necesitas para llevar tu negocio al día,<br />
+        desde WhatsApp
+      </h2>
+      <p class="features-sub">
+        Menos lío, más control: gastos, facturas y cumplimiento fiscal sin curvas de aprendizaje.
+      </p>
+
+      <div class="features-grid">
+        <!-- Card 1 -->
+        <article class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-tag">Gestión diaria</span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="8" y1="13" x2="16" y2="13"/>
+                <line x1="8" y1="17" x2="13" y2="17"/>
+              </svg>
+            </span>
+          </div>
+          <h3 class="feature-title">Control total sin esfuerzo</h3>
+          <p class="feature-desc">
+            Haz una foto a tus tickets y deja que se ordenen solos: gastos e ingresos siempre al día.
+          </p>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-tag">Facturación</span>
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+              </svg>
+            </span>
+          </div>
+          <h3 class="feature-title">Facturas donde ya trabajas</h3>
+          <p class="feature-desc">
+            Crea, envía y guarda facturas desde WhatsApp, sin abrir herramientas complicadas.
+          </p>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="feature-card">
+          <div class="feature-card-top">
+            <span class="feature-tag">Cumplimiento fiscal</span>
+            <span class="feature-icon feature-icon-dot">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+            </span>
+          </div>
+          <h3 class="feature-title">Tranquilidad automática</h3>
+          <p class="feature-desc">
+            Verifactu y validaciones listas para ti, con conexión fácil para tu asesoría cuando la necesites.
+          </p>
+        </article>
+      </div>
+
+      <div class="features-ctas">
+        <a href="#registro" class="btn btn-dark" data-cta="features_signup">Entrar gratis</a>
+        <a href="#info" class="btn btn-white" data-cta="features_info">Solicitar información</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== PAIN POINTS ============== -->
+  <section class="pain">
+    <div class="container pain-grid">
+      <div class="pain-copy">
+        <h2 class="pain-title">
+          Te están complicando la vida<br />
+          sin necesidad
+        </h2>
+        <p class="pain-sub">
+          Si eres autónomo, ya tienes suficiente con tu día a día como para pelearte con herramientas hechas para contables.
+        </p>
+
+        <ul class="pain-list">
+          <li><span class="pain-dot"></span>"Abrir programas lentos"</li>
+          <li><span class="pain-dot"></span>"No saber si lo estás haciendo bien con Hacienda"</li>
+          <li><span class="pain-dot"></span>"Tickets perdidos"</li>
+          <li><span class="pain-dot"></span>"Tu gestor pidiéndote cosas todo el rato"</li>
+        </ul>
+
+        <p class="pain-footer">Facturar no debería ser otro trabajo más.</p>
+      </div>
+
+      <div class="pain-media">
+        <div class="pain-mascot" role="img" aria-label="Mascota FactuPro"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== IS IT FOR YOU ============== -->
+  <section class="foryou">
+    <div class="container">
+      <h2 class="foryou-title">¿Es FactuPro para ti?</h2>
+      <p class="foryou-sub">Si quieres facturar sin líos y desde el móvil, aquí lo verás claro en 10 segundos.</p>
+
+      <div class="foryou-grid">
+        <article class="foryou-card">
+          <div class="foryou-card-top">
+            <h3 class="foryou-card-title">Sí es para ti si:</h3>
+            <span class="foryou-tag">Rápido y simple</span>
+          </div>
+          <ul class="foryou-list">
+            <li><span class="check-mini">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>Quieres simplificar tu día a día</li>
+            <li><span class="check-mini">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>Haces entre 10 y 150 facturas al mes</li>
+            <li><span class="check-mini">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>Prefieres hacerlo todo desde WhatsApp</li>
+            <li><span class="check-mini">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </span>No quieres complicarte con contabilidad</li>
+          </ul>
+        </article>
+
+        <article class="foryou-card">
+          <div class="foryou-card-top">
+            <h3 class="foryou-card-title">No es para ti si:</h3>
+            <span class="foryou-tag">Sin ERP pesado</span>
+          </div>
+          <ul class="foryou-list">
+            <li><span class="cross-mini">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </span>No es para empresas grandes o con ERP complejo</li>
+          </ul>
+          <a href="#registro" class="btn foryou-cta" data-cta="foryou_signup">Empieza gratis desde WhatsApp</a>
+          <p class="foryou-note">Sin instalar nada. Entras, escribes y listo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HOW IT WORKS ============== -->
+  <section class="howit">
+    <div class="container howit-grid">
+      <div class="howit-copy">
+        <span class="howit-tag">CÓMO FUNCIONA</span>
+        <h2 class="howit-title">Ridículamente fácil</h2>
+        <p class="howit-sub">Sin menús, sin plantillas, sin "configuraciones". Solo WhatsApp y listo.</p>
+
+        <ul class="howit-steps">
+          <li class="howit-step">
+            <span class="howit-num">1</span>
+            <div>
+              <h3>Escribes por WhatsApp</h3>
+              <p>Dices lo básico y sigues con tu día, desde el móvil.</p>
+            </div>
+          </li>
+          <li class="howit-step">
+            <span class="howit-num">2</span>
+            <div>
+              <h3>FactuPro lo genera y valida</h3>
+              <p>Se crea la factura y queda lista sin líos ni dudas.</p>
+            </div>
+          </li>
+          <li class="howit-step">
+            <span class="howit-num">3</span>
+            <div>
+              <h3>Tu gestor lo recibe ordenado</h3>
+              <p>Todo queda organizado para que no te pidan lo mismo dos veces.</p>
+            </div>
+          </li>
+        </ul>
+
+        <div class="howit-cta-row">
+          <a href="#registro" class="btn btn-primary" data-cta="howit_signup">Empieza gratis en 2 minutos</a>
+          <span class="howit-note">Sin instalación. Sin curva de aprendizaje.</span>
+        </div>
+      </div>
+
+      <div class="howit-media">
+        <div class="howit-image-wrap">
+          <img src="assets/imac-factupro.jpg" alt="FactuPro en escritorio" class="howit-image" onerror="this.style.display='none'; this.parentElement.classList.add('placeholder');" />
+          <div class="placeholder-text">🖥️ Imagen: iMac con FactuPro</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">FactuPro</div>
+        <div class="footer-company">AETERNUM SOLUTIONS SL</div>
+      </div>
+      <nav class="footer-nav" aria-label="Enlaces legales">
+        <h4 class="footer-nav-title">Páginas</h4>
+        <ul>
+          <li><a href="#">Aviso Legal</a></li>
+          <li><a href="#">Política de Privacidad</a></li>
+          <li><a href="#">Política de Cookies</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      © 2026 AETERNUM SOLUTIONS SL. Todos los derechos reservados. Diseñado por <a href="#">Ad Clientes</a>.
+    </div>
+  </footer>
+
+  <!-- ============== SCRIPTS ============== -->
+  <script src="js/tracking.js"></script>
+</body>
+</html>
