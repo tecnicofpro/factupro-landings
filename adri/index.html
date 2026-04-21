@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Índice — FactuPro Landings</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      color: #14142b;
+      background: #fefdfb;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    .wrap {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 48px;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 28px;
+      font-weight: 900;
+      letter-spacing: -1.1px;
+    }
+    .logo-accent { color: #FFDD00; background: #14142b; padding: 0 6px; border-radius: 6px; }
+    .badge-private {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 5px 10px;
+      background: #14142b;
+      color: #fefdf8;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .badge-private::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: #FFDD00;
+      border-radius: 50%;
+    }
+
+    .hero {
+      margin-bottom: 40px;
+    }
+    .hero-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #6b7280;
+      margin-bottom: 14px;
+    }
+    .hero-label::before {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: #FFDD00;
+      border-radius: 2px;
+    }
+    .hero h1 {
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: clamp(34px, 6vw, 52px);
+      font-weight: 900;
+      letter-spacing: -1.6px;
+      line-height: 1.05;
+      margin: 0 0 12px;
+    }
+    .hero p {
+      font-size: 16px;
+      color: #6b7280;
+      margin: 0;
+      max-width: 560px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #9ca3af;
+      margin: 40px 0 14px;
+    }
+
+    .card-list {
+      display: grid;
+      gap: 12px;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 18px 20px;
+      background: #fefdf8;
+      border: 1px solid #eceef1;
+      border-radius: 14px;
+      transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      border-color: #14142b;
+      box-shadow: 0 6px 20px -10px rgba(20, 20, 43, 0.25);
+    }
+    .card-icon {
+      flex-shrink: 0;
+      width: 44px;
+      height: 44px;
+      background: #FFDD00;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Fraunces', Georgia, serif;
+      font-size: 22px;
+      font-weight: 900;
+      color: #14142b;
+      letter-spacing: -0.5px;
+    }
+    .card-icon.secondary { background: #f5f6f8; color: #6b7280; }
+    .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+    .card-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #14142b;
+      margin: 0 0 4px;
+      letter-spacing: -0.2px;
+    }
+    .card-url {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 12px;
+      color: #9ca3af;
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .card-arrow {
+      flex-shrink: 0;
+      color: #9ca3af;
+      transition: transform 0.15s ease, color 0.15s ease;
+    }
+    .card:hover .card-arrow {
+      color: #14142b;
+      transform: translateX(3px);
+    }
+
+    .footer-note {
+      margin-top: 48px;
+      padding: 16px 20px;
+      background: #f5f6f8;
+      border-radius: 12px;
+      font-size: 13px;
+      color: #6b7280;
+      line-height: 1.55;
+    }
+    .footer-note strong { color: #14142b; }
+
+    @media (max-width: 520px) {
+      .wrap { padding: 32px 20px 60px; }
+      .card-url { font-size: 11px; }
+      .card { padding: 16px; gap: 12px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+
+    <div class="header">
+      <span class="logo">FactuPro<span class="logo-accent">·</span></span>
+      <span class="badge-private">Privado</span>
+    </div>
+
+    <section class="hero">
+      <span class="hero-label">Índice interno</span>
+      <h1>Landings Meta Ads</h1>
+      <p>Acceso rápido a todas las landings activas y páginas legales del proyecto.</p>
+    </section>
+
+    <h2 class="section-title">Landings</h2>
+    <div class="card-list">
+
+      <a href="/software-verifactu" class="card">
+        <div class="card-icon">V</div>
+        <div class="card-body">
+          <p class="card-title">Software Verifactu</p>
+          <p class="card-url">lp.factupro.es/software-verifactu</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="/software-de-facturacion" class="card">
+        <div class="card-icon">F</div>
+        <div class="card-body">
+          <p class="card-title">Software de Facturación</p>
+          <p class="card-url">lp.factupro.es/software-de-facturacion</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="/creacion-de-facturas-online" class="card">
+        <div class="card-icon">C</div>
+        <div class="card-body">
+          <p class="card-title">Creación de Facturas Online</p>
+          <p class="card-url">lp.factupro.es/creacion-de-facturas-online</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+    </div>
+
+    <h2 class="section-title">Páginas legales</h2>
+    <div class="card-list">
+
+      <a href="/aviso-legal" class="card">
+        <div class="card-icon secondary">§</div>
+        <div class="card-body">
+          <p class="card-title">Aviso Legal</p>
+          <p class="card-url">lp.factupro.es/aviso-legal</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="/politica-de-privacidad" class="card">
+        <div class="card-icon secondary">P</div>
+        <div class="card-body">
+          <p class="card-title">Política de Privacidad</p>
+          <p class="card-url">lp.factupro.es/politica-de-privacidad</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+      <a href="/politica-de-cookies" class="card">
+        <div class="card-icon secondary">C</div>
+        <div class="card-body">
+          <p class="card-title">Política de Cookies</p>
+          <p class="card-url">lp.factupro.es/politica-de-cookies</p>
+        </div>
+        <svg class="card-arrow" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+
+    </div>
+
+    <div class="footer-note">
+      <strong>Nota:</strong> esta página es privada (noindex) y solo sirve como panel interno para navegar rápido entre las landings.
+    </div>
+
+  </div>
+
+</body>
+</html>

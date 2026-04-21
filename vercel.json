@@ -8,6 +8,7 @@
     { "source": "/creacion-de-facturas-online", "destination": "/creacion-de-facturas-online/index.html" },
     { "source": "/aviso-legal", "destination": "/aviso-legal/index.html" },
     { "source": "/politica-de-privacidad", "destination": "/politica-de-privacidad/index.html" },
-    { "source": "/politica-de-cookies", "destination": "/politica-de-cookies/index.html" }
+    { "source": "/politica-de-cookies", "destination": "/politica-de-cookies/index.html" },
+    { "source": "/adri", "destination": "/adri/index.html" }
   ]
 }
