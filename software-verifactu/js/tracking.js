@@ -58,7 +58,7 @@
   }
 
   // -------- 3. META PIXEL (requiere consentimiento: advertisement) --------
-  const META_PIXEL_ID = 'YOUR_PIXEL_ID';
+  const META_PIXEL_ID = '811718112008616';
 
   function loadMetaPixel(pixelId) {
     if (!pixelId || pixelId === 'YOUR_PIXEL_ID') return;
