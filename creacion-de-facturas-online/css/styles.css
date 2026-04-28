@@ -1086,3 +1086,191 @@ button { font-family: inherit; cursor: pointer; }
   .cky-btn-revisit-wrapper { bottom: 90px !important; }
   .bd-item { padding-left: 4px !important; }
 }
+
+
+/* ============================================
+   FACTUPRO — CONTACT MODAL
+   ============================================ */
+#fp-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+}
+#fp-modal.fp-modal-open { display: flex; }
+
+.fp-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 20, 43, 0.6);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+.fp-modal-box {
+  position: relative;
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 36px 32px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 24px 64px rgba(0,0,0,0.18);
+  z-index: 1;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.fp-modal-close {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: #9ca3af;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+  transition: color .15s;
+}
+.fp-modal-close:hover { color: #14142b; }
+
+.fp-modal-tag {
+  display: inline-block;
+  background: #f5f6f8;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 6px;
+  margin: 0 0 14px;
+}
+
+.fp-modal-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #14142b;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+  line-height: 1.15;
+}
+
+.fp-modal-sub {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0 0 24px;
+  line-height: 1.5;
+}
+
+/* FORM */
+.fp-modal-form { display: flex; flex-direction: column; gap: 14px; }
+
+.fp-field { display: flex; flex-direction: column; gap: 5px; }
+
+.fp-field label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #374151;
+}
+
+.fp-field input {
+  padding: 12px 14px;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  color: #14142b;
+  background: #fafafa;
+  transition: border-color .15s, box-shadow .15s;
+  outline: none;
+}
+.fp-field input:focus {
+  border-color: #FFDD00;
+  box-shadow: 0 0 0 3px rgba(255,221,0,0.2);
+  background: #fff;
+}
+.fp-field input::placeholder { color: #9ca3af; }
+
+.fp-required { color: #ef4444; }
+.fp-optional { color: #9ca3af; font-weight: 400; }
+
+.fp-error {
+  font-size: 13px;
+  color: #ef4444;
+  margin: 0;
+  padding: 10px 12px;
+  background: #fef2f2;
+  border-radius: 8px;
+}
+
+.fp-submit {
+  padding: 15px 24px;
+  background: #FFDD00;
+  color: #14142b;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: background .15s, transform .15s;
+  margin-top: 4px;
+}
+.fp-submit:hover:not(:disabled) { background: #F5D000; transform: translateY(-1px); }
+.fp-submit:disabled { opacity: .6; cursor: not-allowed; }
+
+.fp-legal {
+  font-size: 12px;
+  color: #9ca3af;
+  text-align: center;
+  margin: 0;
+}
+.fp-legal a { color: #6b7280; text-decoration: underline; }
+
+/* SUCCESS STATE */
+.fp-modal-success-state {
+  text-align: center;
+  padding: 16px 0 8px;
+}
+
+.fp-success-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #FFDD00;
+  color: #14142b;
+  font-size: 28px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.fp-success-close {
+  background: #f5f6f8;
+  color: #14142b;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 560px) {
+  .fp-modal-box {
+    padding: 32px 22px 28px;
+    border-radius: 16px;
+  }
+  .fp-modal-title { font-size: 24px; }
+}
