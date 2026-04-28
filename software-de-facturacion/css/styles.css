@@ -741,3 +741,12 @@ button { font-family: inherit; cursor: pointer; }
   .footer-inner { flex-direction: column; gap: 40px; padding-bottom: 40px; }
   .footer-logo { font-size: 56px; }
 }
+/* ============ COOKIEYES OVERRIDE ============ */
+.cky-btn-revisit-wrapper {
+  bottom: 80px !important;
+  left: 16px !important;
+}
+@media (max-width: 560px) {
+  .cky-btn-revisit-wrapper { bottom: 90px !important; }
+  .bd-item { padding-left: 4px !important; }
+}
