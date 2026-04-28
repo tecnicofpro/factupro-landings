@@ -8,7 +8,7 @@
   // ---- CONFIG ----
   // Crea tu formulario gratis en https://formspree.io
   // y pega aquí el endpoint (ej: https://formspree.io/f/xyzabcde)
-  const FORM_ENDPOINT = 'https://formspree.io/f/XXXXXXXX';
+  const FORM_ENDPOINT = 'https://formspree.io/f/meevbwrq';
 
   // ---- SELECTORS ----
   // Abre el modal cualquier botón que lleve href="#info", href="#asesor"
