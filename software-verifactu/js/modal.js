@@ -16,6 +16,7 @@
   const TRIGGER_SELECTORS = [
     'a[href="#info"]',
     'a[href="#asesor"]',
+    'a[href="#chat"]',
     '[data-modal="contact"]'
   ].join(',');
 
