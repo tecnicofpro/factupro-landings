@@ -41,7 +41,7 @@
       try {
         const url = new URL(href, window.location.origin);
         UTM_KEYS.forEach((k) => { if (utms[k] && !url.searchParams.has(k)) url.searchParams.set(k, utms[k]); });
-        a.setAttribute('href', url.pathname + url.search + url.hash);
+        a.setAttribute('href', url.href);
       } catch (e) {}
     });
   }
